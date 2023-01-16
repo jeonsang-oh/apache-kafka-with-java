@@ -18,7 +18,7 @@ public class SimpleProducer {
 
     public static void main(String[] args) {
 
-        // KafkaProducer 인스턴스를 생성하기 위한 옵션들을 key, value 값으로 선언
+        // KafkaProducer  인스턴스를 생성하기 위한 옵션들을 key, value 값으로 선언
         Properties configs = new Properties();
         configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
