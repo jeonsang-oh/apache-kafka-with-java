@@ -26,9 +26,9 @@ public class KStreamJoinTable {
 
         StreamsBuilder builder = new StreamsBuilder();
         // address 토픽을 KTable로 가져올 때는 table() 메서드를 소스 프로세서로 사용하면 된다.
-        KTable<String, String> addressTable = builder.table(ADDRESS_TABLE);
+        KTable<String,String> addressTable = builder.table(ADDRESS_TABLE);
         // order 토픽은 KStream으로 가져올 것이므로 stream() 메서드를 소스 프로세서로 사용된다.
-        KStream<String, String> orderStream = builder.stream(ORDER_STREAM);
+        KStream<String,String> orderStream = builder.stream(ORDER_STREAM);
 
         // 조인을 위해 KStream 인스턴스에 정의되어 있는 join() 메서드를 사용한다.
         // 첫 번째 파라미터로 조인을 수행할 KTable 인스턴스를 넣는다.
