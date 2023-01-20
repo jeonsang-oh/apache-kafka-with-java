@@ -33,7 +33,7 @@ public class KStreamJoinTable {
         // 조인을 위해 KStream 인스턴스에 정의되어 있는 join() 메서드를 사용한다.
         // 첫 번째 파라미터로 조인을 수행할 KTable 인스턴스를 넣는다.
         // KStream과 KTable에서 동일한 메시지 키를 가진 데이터를 찾았을 경우 각각의 메시지 값을 조합해서 어떤 데이터를 만들지 정의한다.
-        // 여기서는 order 토픽의 물품 이름과 address토픽의 주소를 조합하여 새로운 메시지 값을 만든다.
+        // 여기서는 order 토픽의 물품 이름과 address 토픽의 주소를 조합하여 새로운 메시지 값을 만든다.
         orderStream.join(addressTable,
                 (order, address) -> order + " send to " + address)
                 .to(ORDER_JOIN_STREAM);
