@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apache-kafka-java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/simple-kafka-producer-consumer/apache-kafka-java" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/simple-kafka-producer/apache-kafka-java" vcs="Git" />
   </component>
 </project>
