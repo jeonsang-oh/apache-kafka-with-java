@@ -5,6 +5,16 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/simple-kafka-detailed-concept" />
+        <option name="gradleJvm" value="18" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/simple-kafka-detailed-concept" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/simple-kafka-detailed-conecpt" />
         <option name="gradleJvm" value="18" />
         <option name="modules">
