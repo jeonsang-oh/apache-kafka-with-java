@@ -1,3 +1,4 @@
+/*
 package com.example.consumerLag;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -33,3 +34,4 @@ public class SearchConsumerLag {
         }
     }
 }
+*/
