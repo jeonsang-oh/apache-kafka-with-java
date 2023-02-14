@@ -29,7 +29,7 @@ public class HdfsSinkApplication {
         configs.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         configs.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 
-        // 컨슈머 스레드를 스레드 풀로 관리하기 위해 newCachedThreadPoll()을 생성한다.
+        // 컨슈머 스레드를 스레드 풀로 관리하기 위해 newCachedThreadPool()을 생성한다.
         ExecutorService executorService = Executors.newCachedThreadPool();
         for (int i = 0; i < CONSUMER_COUNT; i++) {
             workers.add(new ConsumerWorker(configs, TOPIC_NAME, i));
