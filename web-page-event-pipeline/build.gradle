@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.springframework.kafka:spring-kafka:2.5.10.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter:2.4.0'
+    implementation 'org.springframework.kafka:spring-kafka:2.5.10.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'org.apache.kafka:kafka-clients:2.5.0'
+    implementation 'org.apache.hadoop:hadoop-client:3.3.0'
+    implementation 'org.apache.kafka:connect-api:2.5.0'
+    implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.9.2'
+}
+
+test {
+    useJUnitPlatform()
+}
